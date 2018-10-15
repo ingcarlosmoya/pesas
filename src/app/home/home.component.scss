@@ -1,0 +1,104 @@
+.ac-home {
+    &__img {
+        width: 100%;
+        height: 420px;
+        background-size: cover;
+        position: relative;
+        &__txt {
+            &--style1 {
+                    font-size: 36px;
+                    width: 50%;
+                    float: right;
+                    color: #FFF;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    strong {
+                        font-size: 56px;
+                    }
+                    span{
+                        &:nth-child(2){
+                            padding-left: 60px;
+                        }
+                        &:nth-child(3){
+                            padding-left: 100px;
+                        }
+                    }
+            }
+            &--style2 {
+                color: #19313F;
+                font-size: 28px;
+                padding: 1em 3em;
+                text-align: left;
+                font-weight: bold;
+                background: rgba(255,255,255,.4);
+                position: absolute;
+                bottom: 10%;
+                left: 0;
+                span {
+                    display: block;
+                }
+            }
+            &--style3 {
+                    font-size: 36px;
+                    width: 50%;
+                    float: right;
+                    color: #FFF;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    strong {
+                        font-size: 56px;
+                    }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) { 
+    .ac-home {
+    &__img {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        position: relative;
+        &__txt {
+            &--style1 {
+                    font-size: 22px;
+                    width: 98%;
+                    strong {
+                        font-size: 28px;
+                    }
+                    span{
+                        &:nth-child(2){
+                            padding-left: 60px;
+                        }
+                        &:nth-child(3){
+                            padding-left: 100px;
+                        }
+                    }
+            }
+            &--style2 {
+                color: #19313F;
+                font-size: 18px;
+                padding: .5em 1em;
+                bottom: 10%;
+                left: 0;
+                text-align: center;
+                span {
+                    display: block;
+                }
+            }
+            &--style3 {
+                    font-size: 20px;
+                    width: 80%;
+                    strong {
+                        font-size: 26px;
+                    }
+            }
+        }
+    }
+}
+}

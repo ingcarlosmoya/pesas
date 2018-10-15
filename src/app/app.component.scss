@@ -1,0 +1,199 @@
+.ac-body {
+    height: 100%;
+}
+.ac-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    &__icon {
+        display: none;
+    }
+    &__logo {
+        width: 300px;
+        padding: 1em 2em;
+        img {
+            width: 100%;
+        }
+    }
+    &__nav {
+        margin: 0;
+        padding: 0 2em;
+        text-align: right;
+        &__link {
+            display: inline-block;
+            a {
+                color: #333333;
+                font-size: 16px;
+                text-decoration: none;
+                padding: 2em 1em;
+                display: block;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    border-color: #2A77BB;
+                }
+                &.active {
+                    border-color: #2A77BB;
+                }
+            }
+        }
+    }
+}
+
+.ac-footer {
+    background: #262626;
+    padding: 2em;
+    &--wp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__section {
+        border-right: 1px solid #464646;
+        padding: 0 1em;
+        width: 25%;
+        &:last-child {
+            border: 0;
+        }
+        &__list {
+            padding: 0;
+            margin: 0;
+            &__item {
+                list-style: none;
+                color: #FFF;
+                font-size: 14px;
+                padding: .2em 0;
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                    &:hover {
+                        color: #BC2C30;
+                    }
+                }
+                i {
+                    margin-right: .8em;
+                }
+            }
+        }
+    }
+    &__social {
+        display: block;
+        width: 100%;
+        padding-top: 1em;
+        text-align: center;
+        &__icon {
+            display: inline-block;
+            text-decoration: none;
+            color: #FFF;
+            i {
+           
+            padding: 0 1em;
+            &:before {
+                 font-size: 30px;
+            }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 680px) { 
+    .ac-body {
+        &--active {
+            position: fixed;
+            top: 0;
+            right: 280px;
+        } 
+    }
+    .ac-header{
+        &__nav {
+            display: block;
+            position: fixed;
+            background: #fff;
+            z-index: 9999;
+            top: 0;
+            right: -999px;
+            padding: 0;
+            width: 280px;
+            height: 100%;
+            transition: all .5s;
+            &__link {
+                display: block;
+                height: auto;
+                margin: 0;
+                a {
+                    padding: 1em 1.5em;
+                }
+            }
+             &--active {
+                    right: 0;
+                }
+        }
+        &__logo {
+            width: 220px;
+            padding: .5em 1em;
+        }
+        &__icon {
+            position: absolute;
+            top: .2em;
+            right: 0;
+            font-size: 24px;
+            color: silver;
+            padding: 1em;
+            display: block;
+        }
+    }
+
+    .ac-footer {
+    padding: 1em;
+    &--wp {
+        flex-direction: column;
+    }
+    &__section {
+        border-right: 0;
+        padding: 1em 0;
+        width: 100%;
+        text-align: center;
+        &__list {
+            padding: 0;
+            margin: 0;
+            &__item {
+                list-style: none;
+                color: #FFF;
+                font-size: 14px;
+                padding: .2em 0;
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                    &:hover {
+                        color: #BC2C30;
+                    }
+                }
+                i {
+                    margin-right: .8em;
+                }
+            }
+        }
+    }
+    &__social {
+        display: block;
+        width: 100%;
+        padding-top: 1em;
+        text-align: center;
+        &__icon {
+            display: inline-block;
+            text-decoration: none;
+            color: #FFF;
+            i {
+           
+            padding: 0 1em;
+            &:before {
+                 font-size: 30px;
+            }
+            }
+        }
+        
+    }
+}
+}
