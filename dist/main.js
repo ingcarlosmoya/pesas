@@ -189,13 +189,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/esm5/forms.js");
 /* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/esm5/http.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _intro_intro_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./intro/intro.component */ "./src/app/intro/intro.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nosotros/nosotros.component */ "./src/app/nosotros/nosotros.component.ts");
-/* harmony import */ var _servicios_servicios_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./servicios/servicios.component */ "./src/app/servicios/servicios.component.ts");
-/* harmony import */ var _contacto_contacto_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./contacto/contacto.component */ "./src/app/contacto/contacto.component.ts");
-/* harmony import */ var _contacto_contacto_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./contacto/contacto.service */ "./src/app/contacto/contacto.service.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _intro_intro_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./intro/intro.component */ "./src/app/intro/intro.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./nosotros/nosotros.component */ "./src/app/nosotros/nosotros.component.ts");
+/* harmony import */ var _servicios_servicios_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./servicios/servicios.component */ "./src/app/servicios/servicios.component.ts");
+/* harmony import */ var _contacto_contacto_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./contacto/contacto.component */ "./src/app/contacto/contacto.component.ts");
+/* harmony import */ var _contacto_contacto_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./contacto/contacto.service */ "./src/app/contacto/contacto.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -214,27 +215,29 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-                _intro_intro_component__WEBPACK_IMPORTED_MODULE_6__["IntroComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
-                _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_8__["NosotrosComponent"],
-                _servicios_servicios_component__WEBPACK_IMPORTED_MODULE_9__["ServiciosComponent"],
-                _contacto_contacto_component__WEBPACK_IMPORTED_MODULE_10__["ContactoComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+                _intro_intro_component__WEBPACK_IMPORTED_MODULE_7__["IntroComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
+                _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_9__["NosotrosComponent"],
+                _servicios_servicios_component__WEBPACK_IMPORTED_MODULE_10__["ServiciosComponent"],
+                _contacto_contacto_component__WEBPACK_IMPORTED_MODULE_11__["ContactoComponent"]
             ],
             imports: [
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
                 _angular_http__WEBPACK_IMPORTED_MODULE_3__["HttpModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"]
             ],
-            providers: [_contacto_contacto_service__WEBPACK_IMPORTED_MODULE_11__["ContactoService"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+            providers: [_contacto_contacto_service__WEBPACK_IMPORTED_MODULE_12__["ContactoService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -383,7 +386,7 @@ var ContactoService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n  <div class=\"ac-home\">\n    <div class=\"ac-home__img\" style=\"background-image: url('assets/img/servicios.jpg')\">\n      <div class=\"ac-home__img__txt ac-home__img__txt--style1\">\n        <span>CONECTAMOS EL</span>\n        <span><strong>EJE CAFETERO</strong></span>\n        <span>CON EL RESTO DEL PAÍS</span>\n      </div>\n    </div>\n    <div class=\"ac-home__img\" style=\"background-image: url('assets/img/home02b.jpg')\">\n      <div class=\"ac-home__img__txt ac-home__img__txt--style2\">\n        <span>Aeropuerto – Aeropuerto, Domicilios, Recogida sin costo,</span>\n        <span>Entregas rapidas, Operación Aerea</span>\n      </div>\n    </div>\n    <div class=\"ac-home__img\" style=\"background-image: url('assets/img/home03b.jpg')\">\n      <div class=\"ac-home__img__txt ac-home__img__txt--style3\">\n        <strong>Flotas Confiables</strong>\n        <span>de carga</span>\n      </div>\n    </div>\n  </div>\n</section>\n"
+module.exports = "<section>\n  <div class=\"ac-home\">\n      <ngb-carousel *ngIf=\"images\">\n          <ng-template ngbSlide>\n            <img [src]=\"images[0]\" alt=\"Random first slide\">\n            <div class=\"carousel-caption\">\n              <h3>First slide label</h3>\n              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>\n            </div>\n          </ng-template>\n          <ng-template ngbSlide>\n            <img [src]=\"images[1]\" alt=\"Random second slide\">\n            <div class=\"carousel-caption\">\n              <h3>Second slide label</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n            </div>\n          </ng-template>\n          <ng-template ngbSlide>\n            <img [src]=\"images[2]\" alt=\"Random third slide\">\n            <div class=\"carousel-caption\">\n              <h3>Third slide label</h3>\n              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>\n            </div>\n          </ng-template>\n        </ngb-carousel>\n    <div class=\"ac-home__img\" style=\"background-image: url('assets/img/servicios.jpg')\">\n      <div class=\"ac-home__img__txt ac-home__img__txt--style1\">\n        <span>CONECTAMOS EL</span>\n        <span><strong>EJE CAFETERO</strong></span>\n        <span>CON EL RESTO DEL PAÍS</span>\n      </div>\n    </div>\n    <div class=\"ac-home__img\" style=\"background-image: url('assets/img/home02b.jpg')\">\n      <div class=\"ac-home__img__txt ac-home__img__txt--style2\">\n        <span>Aeropuerto – Aeropuerto, Domicilios, Recogida sin costo,</span>\n        <span>Entregas rapidas, Operación Aerea</span>\n      </div>\n    </div>\n    <div class=\"ac-home__img\" style=\"background-image: url('assets/img/home03b.jpg')\">\n      <div class=\"ac-home__img__txt ac-home__img__txt--style3\">\n        <strong>Flotas Confiables</strong>\n        <span>de carga</span>\n      </div>\n    </div>\n  </div>\n</section>\n"
 
 /***/ }),
 

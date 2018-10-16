@@ -56,6 +56,16 @@ section {
   animation-delay: -0.8s;
 }
 
+.ac-home{
+  margin: 10px 0;
+  width: 100%;
+}
+
+.home-carousel{ 
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 @-webkit-keyframes sk-stretchdelay {
   0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
   20% { -webkit-transform: scaleY(1.0) }

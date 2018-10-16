@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
@@ -22,12 +24,13 @@ import {ContactoService} from './contacto/contacto.service';
     ContactoComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule
   ],
-  providers: [ContactoService],
+  providers: [NgbCarouselConfig, ContactoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

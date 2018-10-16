@@ -1,23 +1,29 @@
 <section>
   <div class="ac-home">
-    <div class="ac-home__img" style="background-image: url('assets/img/servicios.jpg')">
-      <div class="ac-home__img__txt ac-home__img__txt--style1">
-        <span>CONECTAMOS EL</span>
-        <span><strong>EJE CAFETERO</strong></span>
-        <span>CON EL RESTO DEL PAÍS</span>
+    <div class="home-carousel">
+      <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide>
+            <img [src]="images[0]" alt="Random first slide">
+            <div class="carousel-caption">
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img [src]="images[1]" alt="Random second slide">
+            <div class="carousel-caption">
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img [src]="images[2]" alt="Random third slide">
+            <div class="carousel-caption">
+              <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
       </div>
-    </div>
-    <div class="ac-home__img" style="background-image: url('assets/img/home02b.jpg')">
-      <div class="ac-home__img__txt ac-home__img__txt--style2">
-        <span>Aeropuerto – Aeropuerto, Domicilios, Recogida sin costo,</span>
-        <span>Entregas rapidas, Operación Aerea</span>
-      </div>
-    </div>
-    <div class="ac-home__img" style="background-image: url('assets/img/home03b.jpg')">
-      <div class="ac-home__img__txt ac-home__img__txt--style3">
-        <strong>Flotas Confiables</strong>
-        <span>de carga</span>
-      </div>
-    </div>
   </div>
 </section>
